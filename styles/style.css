@@ -10,6 +10,9 @@ nav {
     min-height: 8vh;
     background-color: indigo;
     font-family:'Poppins', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 1; 
 }
 .heading{
     color:#fff;
@@ -243,14 +246,15 @@ span.li{
 /*--------------about------*/
 .about {
     margin: 30px;
-    padding: 30px;
-    padding-top: 20px;
+    padding: 50px;
+    padding-top: 10px;
     background-color: #333;
-    border-radius: 200px;
+    border-radius: 50px;
     width: 50%;
-    left: 250px;
+    left: 225px;
     position: relative;
     display: inline-block;
+    top: 20px;
 }
 #about{
     position: relative;
@@ -265,10 +269,16 @@ span.li{
     text-align: center;
     color: #fff;
     height: 50px;
+    text-decoration: underline;
 }
 .des{
     border-radius: 90px;
     background-color: whitesmoke;
+    width: 300px;
+    height: 100px;
+    left: 90px;
+    position: absolute;
+    box-shadow: #333;
 }
 .des>p{
     color: #333;
@@ -277,6 +287,32 @@ span.li{
     margin: 15px;
 }
 
+@media screen and (max-width:786px){
+    #about{
+        position: relative;
+        justify-content: center;
+        /*background-color: #e6ffff;*/
+        height: 300px;
+    }
+    .about{
+        position: absolute;
+        top: 1px;
+        border-radius: 15px;
+        left: 35px;
+        right: 30px;
+        bottom: 1px;
+        width: 350px;
+        padding: 20px;
+    }
+    .des{
+        position: absolute;
+        border-radius: 20px;
+        padding: 0px;
+        height: 150px;
+        width: 200px;
+        left: 75px;
+    }
+}
 
 
 
@@ -285,12 +321,64 @@ span.li{
     position: relative;
     top: 40px;
     display: block;
-    background-color: bisque;
+    /*background-color: bisque;*/
+    height: 400px;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .contact {
     margin: 20px;
+
 }
 .contact>h2 {
     text-align: center;
-    
+    color: #3399ff;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.cont{
+    height: 300px;
+    width: 350px;
+    background-color: #e6e6ff;
+    left: 320px;
+    position: relative;
+    top: 8px;
+}
+.cont> span{
+    background-color: #99bbff;
+    height: 50px;
+    width: 200px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: x-small;
+    color: #fff2ff;
+    text-align: center;
+    left: 70px;
+    top: 25px;
+}
+
+@media screen and (max-width:7886px){
+    .cont{
+        height: 300px;
+        width: 350px;
+        background-color: #e6e6ff;
+        left: 50px;
+        position: relative;
+        top: 8px;
+    }
+}
+
+
+/*------------Footer---*/
+footer{
+    background: #808080;
+    width: 100%;
+    height: 25px;
+
+}
+footer>p{
+    text-align: center;
+    color: #fff;
 }
